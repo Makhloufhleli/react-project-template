@@ -13,7 +13,24 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitAny": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@Root/*": ["."],
+      "@Src/*": ["./src/*"],
+      "@Components/*": ["./src/components/*"],
+      "@Config/*": ["./src/config/*"],
+      "@Guards/*": ["./src/guards/*"],
+      "@Hooks/*": ["./src/hooks/*"],
+      "@Layouts/*": ["./src/layouts/*"],
+      "@Locales/*": ["./src/locales/*"],
+      "@Pages/*": ["./src/pages/*"],
+      "@Redux/*": ["./src/redux/*"],
+      "@Routes/*": ["./src/routes/*"],
+      "@Sections/*": ["./src/sections/*"],
+      "@Shared/*": ["./src/shared/*"],
+      "@Theme/*": ["./src/theme/*"],
+      "@Utils/*": ["./src/utils/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

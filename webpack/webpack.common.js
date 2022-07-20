@@ -2,12 +2,18 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "..", "./src/index.tsx"),
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
     fallback: { path: require.resolve("path-browserify"), os: false },
+    plugins: [
+      new TsconfigPathsPlugin({
+        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+      }),
+    ],
   },
   module: {
     rules: [
