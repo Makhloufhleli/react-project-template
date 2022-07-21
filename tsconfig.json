@@ -27,7 +27,7 @@
       "@Redux/*": ["./src/redux/*"],
       "@Routes/*": ["./src/routes/*"],
       "@Sections/*": ["./src/sections/*"],
-      "@Shared/*": ["./src/shared/*"],
+      "@Shared/*": ["src/models/*"],
       "@Theme/*": ["./src/theme/*"],
       "@Utils/*": ["./src/utils/*"]
     }
