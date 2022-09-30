@@ -1,3 +1,6 @@
 export const common = {
-  app_name: 'Test App',
+  table: {
+    action: 'Action',
+    actions: 'Actions',
+  }
 };
